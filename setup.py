@@ -16,12 +16,13 @@ setup(
     maintainer_email='omid.taheri@tuebingen.mpg.de',
     #keywords=['pip','MANO'],
     install_requires=[
-          'numpy>=1.16.2',
+          'numpy>=1.16.2,<1.24',
           'torch>=1.0.1.post2',
           'torchgeometry>=0.1.2',
           'trimesh',
           'scipy',
-          'chumpy'
+          'chumpy',
+          'pyglet<2'
       ],
       packages=['mano']
 
